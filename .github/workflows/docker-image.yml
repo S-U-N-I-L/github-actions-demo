@@ -25,7 +25,5 @@ jobs:
     - name: Publish to Docker Hub
       uses: docker/build-push-action@v1
       with:
-       username: sunilsticky@gmail.com
-       password: Sharma123$$$
        repository: sunilsharmadocker/github-actions-demo
        tags: ${{github.run_number}}

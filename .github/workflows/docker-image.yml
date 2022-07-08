@@ -25,5 +25,7 @@ jobs:
     - name: Publish to Docker Hub
       uses: docker/build-push-action@v1
       with:
-       repository: sunilsharmadocker/github-actions-demo
-       tags: ${{github.run_number}}
+        username: ${{ secrets.DOCKER_HUB_USERNAME }} 
+        password:  ${{ secrets.DOCKER_HUB_PASSWORD }}
+        repository: sunilsharmadocker/github-actions-demo
+        tags: ${{github.run_number}}

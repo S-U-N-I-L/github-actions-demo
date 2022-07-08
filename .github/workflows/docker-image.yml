@@ -17,6 +17,6 @@ jobs:
       uses: actions/setup-java@v3.4.0    
       with:        
         java-version: 18
-        distribution: jdk
+        distribution: zulu
     - name: Build with Maven      
       run: ./mvnw package spring-boot:repackage

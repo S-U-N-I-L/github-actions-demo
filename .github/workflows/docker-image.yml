@@ -19,4 +19,4 @@ jobs:
         java-version: 18
         distribution: zulu
     - name: Build with Maven      
-      run: ./mvnw package spring-boot:repackage
+      run: mvn package spring-boot:repackage

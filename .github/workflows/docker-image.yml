@@ -23,9 +23,7 @@ jobs:
     - name: Build with Maven      
       run: mvn package spring-boot:repackage
     - name: Publish to Docker Hub
-      uses: docker/build-push-action@v1
+      uses: docker/build-push-action@v3
       with:
-        username: ${{ secrets.DOCKER_HUB_USERNAME }} 
-        password:  ${{ secrets.DOCKER_HUB_PASSWORD }}
         repository: sunilsharmadocker/github-actions-demo
         tags: ${{github.run_number}}

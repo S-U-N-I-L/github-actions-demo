@@ -14,7 +14,7 @@ jobs:
       Greeting: Hello
     steps:
       - name: "Say Hello Mona it's Monday"
-        run: echo "${{ env.Greeting }} Sunil"
+        run: echo "Sunil"
 
 
 

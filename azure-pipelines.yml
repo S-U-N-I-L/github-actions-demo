@@ -20,8 +20,11 @@ stages:
     pool:
       vmImage: ubuntu-latest
     steps:
-    - task: Maven@1
-      displayName: Compile
+    - task: JavaToolInstaller@0
+      inputs:
+        versionSpec: '18'
+        jdkArchitectureOption: 'x64'
+        jdkSourceOption: 'PreInstalled'
     - task: Maven@3
       inputs:
         mavenPomFile: 'pom.xml'

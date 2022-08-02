@@ -32,6 +32,6 @@ stages:
     - task: Docker@2
       inputs:
         containerRegistry: 'sunildockerhub'
-        repository: 'github-actions-demo'
+        repository: 'sunilsharmadocker/github-actions-demo'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
